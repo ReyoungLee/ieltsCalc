@@ -6,7 +6,9 @@ label {
   label input {
     flex: 1;
     font-size: 18px;
-    text-indent: 6px; }
+    text-indent: 6px;
+    border-radius: 2px;
+    box-shadow: none; }
   label span {
     width: 80px;
     display: inline-block; }
@@ -30,4 +32,4 @@ p {
   color: #167e8a;
   font-weight: 600; }
 
-/*# sourceMappingURL=index@1.css.map */
+/*# sourceMappingURL=index@2.css.map */
