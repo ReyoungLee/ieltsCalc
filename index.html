@@ -5,35 +5,66 @@
 	<title>ieltsCalc</title>
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 	<style>
-		
+		label {
+			display: flex;
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 6px;
+		}
+		label input {
+			flex: 1;
+			font-size: 18px;
+			text-indent: 6px;
+		}
+		label span {
+			width: 80px;
+			display: inline-block;
+		}
+		button {
+			width: 100%;
+			height: 34px;
+		}
+		p {
+			width: 100%;
+			height: 20px;
+		}
 	</style>
 </head>
 <body>
-	<div>
-		<p>单项</p>
-		<label for="">听力</label>
-		<input type="text"><br>
-		<label for="">阅读</label>
-		<input type="text">
-		<p id="results">
-			听力分，阅读分
-		</p>
-		<button>计算</button>
+	<h3>Oh...</h3>
+	<div class="amount">
+		<h4>Single Item Score From Correct Amounts</h4>
+		<label>
+			<span>Listening</span>
+			<input type="text">
+		</label>
+		<label>
+			<span>Reading</span>
+			<input type="text">
+		</label>
+		<p></p>
+		<button>Calculate</button>
 	</div>
-	<div>
-		<p>总分</p>
-		<label for="">听力</label>
-		<input type="text"><br>
-		<label for="">阅读</label>
-		<input type="text"><br>
-		<label for="">写作</label>
-		<input type="text"><br>
-		<label for="">口语</label>
-		<input type="text">
-		<p id="total-results">
-			总分分
-		</p>
-		<button>计算</button>
+	<div class="score">
+		<h4>Total Score From Item Scores</h4>
+		<label>
+			<span>Listening</span>
+			<input type="text">
+		</label>
+		<label>
+			<span>Reading</span>
+			<input type="text">
+		</label>
+		<label>
+			<span>Writing</span>
+			<input type="text">
+		</label>
+		<label>
+			<span>Speaking</span>
+			<input type="text">
+		</label>
+		<p></p>
+		<button>Calculate</button>
 	</div>
 </body>
 <script src="index.js"></script>
