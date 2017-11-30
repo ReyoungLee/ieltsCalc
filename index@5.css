@@ -23,7 +23,8 @@ button {
   border: none;
   transition: .2s ease;
   color: #fff;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 18px; }
   button:active {
     background-color: #1999a8; }
 
@@ -33,4 +34,4 @@ p {
   color: #167e8a;
   font-weight: 600; }
 
-/*# sourceMappingURL=index@4.css.map */
+/*# sourceMappingURL=index@5.css.map */
