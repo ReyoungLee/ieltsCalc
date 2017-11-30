@@ -1,0 +1,23 @@
+label {
+	display: flex;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 6px;
+	input {
+		flex: 1;
+		font-size: 18px;
+		text-indent: 6px;
+	}
+	span {
+		width: 80px;
+		display: inline-block;
+	}
+}
+button {
+	width: 100%;
+	height: 34px;
+}
+p {
+	width: 100%;
+	height: 20px;
+}
