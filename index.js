@@ -25,7 +25,7 @@ let [result, totalResult] = document.querySelectorAll('p'),
 calcItem.onclick = () => {
 	let listeningAmount = scoreMap[amountL.value - 1] || 0,
 		readingAmount = scoreMap[amountR.value - 1] || 0 
-	result.innerHTML = `Listening score ${listeningAmount}, reading score ${readingAmount}`
+	result.innerHTML = `听力分数 ${listeningAmount}, 阅读分数 ${readingAmount}`
 }
 
 calcAll.onclick = () => {
@@ -43,5 +43,5 @@ calcAll.onclick = () => {
 	} else {
 		total = int + 1
 	}
-	totalResult.innerHTML = `Total score ${total}`
+	totalResult.innerHTML = `总分 ${total}`
 }

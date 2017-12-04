@@ -1,3 +1,6 @@
+body {
+  background-color: #f5f5f5; }
+
 label {
   display: flex;
   height: 30px;
@@ -8,7 +11,7 @@ label {
     font-size: 18px;
     text-indent: 6px;
     border-radius: 2px;
-    border: 1px #ddd solid;
+    border: 1px #eee solid;
     -webkit-appearance: none; }
   label span {
     width: 80px;
@@ -34,4 +37,11 @@ p {
   color: #167e8a;
   font-weight: 600; }
 
-/*# sourceMappingURL=index@5.css.map */
+.amount, .score {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #efeded;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=index@6.css.map */
