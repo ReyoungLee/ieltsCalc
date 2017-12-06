@@ -1,0 +1,21 @@
+{
+  "name": "ieltscalc",
+  "version": "1.0.0",
+  "description": "ielts score calculator",
+  "main": "index@1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/index.js -o ./prd.js&& sass ./src/index.scss prd.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyoungLee/ieltsCalc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReyoungLee/ieltsCalc/issues"
+  },
+  "homepage": "https://github.com/ReyoungLee/ieltsCalc#readme",
+  "dependencies": {}
+}
