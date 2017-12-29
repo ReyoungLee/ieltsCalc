@@ -1,3 +1,5 @@
+import './index.scss'
+
 let scoreMap = [
 	1,
 	2,
