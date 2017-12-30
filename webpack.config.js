@@ -2,10 +2,11 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: {
+		index: './src'
+	},
 	output: {
-		path: __dirname,
-		filename: 'prd.js'
+		filename: 'prd.js',
 	},
 	devServer: {
 	},
@@ -20,20 +21,20 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.scss?$/,
-				loader: 'style-loader!css-loader!sass-loader'
+				test: /\.scss$/,
+				exclude: /node_modules/,
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: ['css-loader', 'sass-loader']
+				})
 			},
 			// {
-			// 	test: /\.css$/,
-			// 	loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+			// 	test: /\.scss?$/,
+			// 	loader: 'style-loader!css-loader!sass-loader'
 			// },
-			// {
-			// 	test: /\.scss$/,
-			// 	loader: ExtractTextPlugin.extract('style-loader', 'css-loader!scss-loader')
-			// }
 		]
 	},
-	// plugins: [
-	// 	new ExtractTextPlugin('prd.css')
-	// ]
+	plugins: [
+		new ExtractTextPlugin('prd.css')
+	]
 }
